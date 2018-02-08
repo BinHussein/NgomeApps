@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>NGOME HOUSE DEALERS</title>
+    </head>
+    <body>
+        <div>
+            <h1><a href="/">WELCOME TO NGOME APP</a></h1>
+        </div>
+
+            {% for Ngome in ngomes %}
+				<div>
+					<p>published: {{ Ngome.published_date }}</p>
+					<h1><a href="">{{ Ngome.title }}</a></h1>
+					<p>{{ Ngome.text|linebreaksbr }}</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+				</div>
+			{% endfor %}
+    </body>
+</html>
